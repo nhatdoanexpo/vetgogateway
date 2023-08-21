@@ -49,6 +49,11 @@ import { RouterModule } from '@angular/router';
         data: { pageTitle: 'Partners' },
         loadChildren: () => import('./partner/partner.module').then(m => m.PartnerModule),
       },
+      {
+        path: 'customer',
+        data: { pageTitle: 'Customers' },
+        loadChildren: () => import('./customer/customer.module').then(m => m.CustomerModule),
+      },
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ]),
   ],
