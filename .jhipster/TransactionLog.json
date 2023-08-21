@@ -1,0 +1,28 @@
+{
+  "changelogDate": "20230821153046",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "idItemAgent",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "note",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "TransactionLog",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}
