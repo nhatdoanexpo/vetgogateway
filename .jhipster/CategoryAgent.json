@@ -1,0 +1,20 @@
+{
+  "changelogDate": "20230821152124",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "idAgent",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "idCategory",
+      "fieldType": "Long"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "CategoryAgent",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}
