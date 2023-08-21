@@ -1,0 +1,59 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-config-app-heading" data-cy="ConfigAppCreateUpdateHeading">Thêm mới hoặc cập nhật Config App</h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="row mb-3" *ngIf="editForm.controls.id.value !== null">
+          <label class="form-label" for="field_id">ID</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_firebase">Firebase</label>
+          <input type="text" class="form-control" name="firebase" id="field_firebase" data-cy="firebase" formControlName="firebase" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_sheetId">Sheet Id</label>
+          <input type="text" class="form-control" name="sheetId" id="field_sheetId" data-cy="sheetId" formControlName="sheetId" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_status">Status</label>
+          <input type="text" class="form-control" name="status" id="field_status" data-cy="status" formControlName="status" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_idCustomer">Id Customer</label>
+          <input
+            type="number"
+            class="form-control"
+            name="idCustomer"
+            id="field_idCustomer"
+            data-cy="idCustomer"
+            formControlName="idCustomer"
+          />
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span>Hủy</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span>Lưu</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+{
+  "changelogDate": "20230821135755",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "firebase",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sheetId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idCustomer",
+      "fieldType": "Long"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "ConfigApp",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}
