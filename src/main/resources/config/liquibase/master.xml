@@ -19,6 +19,7 @@
     <include file="config/liquibase/changelog/20230821152651_added_entity_ItemAgent.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20230821153046_added_entity_TransactionLog.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20230821153343_added_entity_Distributor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230821153708_added_entity_Partner.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
