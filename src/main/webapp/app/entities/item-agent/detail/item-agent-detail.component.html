@@ -1,0 +1,52 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="itemAgent">
+      <h2 data-cy="itemAgentDetailsHeading"><span>Item Agent</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span>ID</span></dt>
+        <dd>
+          <span>{{ itemAgent.id }}</span>
+        </dd>
+        <dt><span>Id Agent</span></dt>
+        <dd>
+          <span>{{ itemAgent.idAgent }}</span>
+        </dd>
+        <dt><span>Id Item</span></dt>
+        <dd>
+          <span>{{ itemAgent.idItem }}</span>
+        </dd>
+        <dt><span>Price</span></dt>
+        <dd>
+          <span>{{ itemAgent.price }}</span>
+        </dd>
+        <dt><span>Status</span></dt>
+        <dd>
+          <span>{{ itemAgent.status }}</span>
+        </dd>
+        <dt><span>Id Config App</span></dt>
+        <dd>
+          <span>{{ itemAgent.idConfigApp }}</span>
+        </dd>
+        <dt><span>Paid</span></dt>
+        <dd>
+          <span>{{ itemAgent.paid }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Quay lại</span>
+      </button>
+
+      <button type="button" [routerLink]="['/item-agent', itemAgent.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Sửa</span>
+      </button>
+    </div>
+  </div>
+</div>

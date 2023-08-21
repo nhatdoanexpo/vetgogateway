@@ -1,0 +1,36 @@
+{
+  "changelogDate": "20230821152651",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "idAgent",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "idItem",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idConfigApp",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "paid",
+      "fieldType": "Boolean"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "ItemAgent",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}
