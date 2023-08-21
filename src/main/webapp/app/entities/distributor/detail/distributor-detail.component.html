@@ -1,0 +1,52 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="distributor">
+      <h2 data-cy="distributorDetailsHeading"><span>Distributor</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span>ID</span></dt>
+        <dd>
+          <span>{{ distributor.id }}</span>
+        </dd>
+        <dt><span>Name</span></dt>
+        <dd>
+          <span>{{ distributor.name }}</span>
+        </dd>
+        <dt><span>Code</span></dt>
+        <dd>
+          <span>{{ distributor.code }}</span>
+        </dd>
+        <dt><span>Phone</span></dt>
+        <dd>
+          <span>{{ distributor.phone }}</span>
+        </dd>
+        <dt><span>Email</span></dt>
+        <dd>
+          <span>{{ distributor.email }}</span>
+        </dd>
+        <dt><span>Address</span></dt>
+        <dd>
+          <span>{{ distributor.address }}</span>
+        </dd>
+        <dt><span>Id Agent</span></dt>
+        <dd>
+          <span>{{ distributor.idAgent }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Quay lại</span>
+      </button>
+
+      <button type="button" [routerLink]="['/distributor', distributor.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Sửa</span>
+      </button>
+    </div>
+  </div>
+</div>
