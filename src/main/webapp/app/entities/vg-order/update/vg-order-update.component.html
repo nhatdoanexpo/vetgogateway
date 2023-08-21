@@ -1,0 +1,98 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-vg-order-heading" data-cy="VgOrderCreateUpdateHeading">Thêm mới hoặc cập nhật Vg Order</h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="row mb-3" *ngIf="editForm.controls.id.value !== null">
+          <label class="form-label" for="field_id">ID</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_idCustomer">Id Customer</label>
+          <input
+            type="number"
+            class="form-control"
+            name="idCustomer"
+            id="field_idCustomer"
+            data-cy="idCustomer"
+            formControlName="idCustomer"
+          />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_orderType">Order Type</label>
+          <input type="text" class="form-control" name="orderType" id="field_orderType" data-cy="orderType" formControlName="orderType" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_paid">Paid</label>
+          <input type="checkbox" class="form-check" name="paid" id="field_paid" data-cy="paid" formControlName="paid" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_totalAmount">Total Amount</label>
+          <input
+            type="number"
+            class="form-control"
+            name="totalAmount"
+            id="field_totalAmount"
+            data-cy="totalAmount"
+            formControlName="totalAmount"
+          />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_createdDate">Created Date</label>
+          <div class="d-flex">
+            <input
+              id="field_createdDate"
+              data-cy="createdDate"
+              type="datetime-local"
+              class="form-control"
+              name="createdDate"
+              formControlName="createdDate"
+              placeholder="YYYY-MM-DD HH:mm"
+            />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_idPartner">Id Partner</label>
+          <input type="number" class="form-control" name="idPartner" id="field_idPartner" data-cy="idPartner" formControlName="idPartner" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_attributes">Attributes</label>
+          <input
+            type="text"
+            class="form-control"
+            name="attributes"
+            id="field_attributes"
+            data-cy="attributes"
+            formControlName="attributes"
+          />
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span>Hủy</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span>Lưu</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

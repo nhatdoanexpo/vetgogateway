@@ -29,13 +29,14 @@
       "TransactionLog",
       "Distributor",
       "Partner",
-      "Customer"
+      "Customer",
+      "VgOrder"
     ],
     "entitySuffix": "",
     "jhiPrefix": "jhi",
     "jhipsterVersion": "7.9.3",
     "languages": ["en", "fr"],
-    "lastLiquibaseTimestamp": 1692632533000,
+    "lastLiquibaseTimestamp": 1692633008000,
     "messageBroker": false,
     "microfrontend": false,
     "microfrontends": [],

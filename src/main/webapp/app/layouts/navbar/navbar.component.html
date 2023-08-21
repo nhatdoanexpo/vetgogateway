@@ -163,6 +163,18 @@
                 <span>Customer</span>
               </a>
             </li>
+            <li>
+              <a
+                class="dropdown-item"
+                routerLink="vg-order"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                (click)="collapseNavbar()"
+              >
+                <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+                <span>Vg Order</span>
+              </a>
+            </li>
             <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
           </ul>
         </li>

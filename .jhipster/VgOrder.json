@@ -1,0 +1,40 @@
+{
+  "changelogDate": "20230821155008",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "idCustomer",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "orderType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paid",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "totalAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "idPartner",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "attributes",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "VgOrder",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}
