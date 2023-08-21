@@ -1,0 +1,60 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="orderItem">
+      <h2 data-cy="orderItemDetailsHeading"><span>Order Item</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span>ID</span></dt>
+        <dd>
+          <span>{{ orderItem.id }}</span>
+        </dd>
+        <dt><span>Id Item</span></dt>
+        <dd>
+          <span>{{ orderItem.idItem }}</span>
+        </dd>
+        <dt><span>Item Name</span></dt>
+        <dd>
+          <span>{{ orderItem.itemName }}</span>
+        </dd>
+        <dt><span>Price</span></dt>
+        <dd>
+          <span>{{ orderItem.price }}</span>
+        </dd>
+        <dt><span>Qty</span></dt>
+        <dd>
+          <span>{{ orderItem.qty }}</span>
+        </dd>
+        <dt><span>Total Price</span></dt>
+        <dd>
+          <span>{{ orderItem.totalPrice }}</span>
+        </dd>
+        <dt><span>Id Vg Order</span></dt>
+        <dd>
+          <span>{{ orderItem.idVgOrder }}</span>
+        </dd>
+        <dt><span>Discount</span></dt>
+        <dd>
+          <span>{{ orderItem.discount }}</span>
+        </dd>
+        <dt><span>Id Item Agent</span></dt>
+        <dd>
+          <span>{{ orderItem.idItemAgent }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Quay lại</span>
+      </button>
+
+      <button type="button" [routerLink]="['/order-item', orderItem.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Sửa</span>
+      </button>
+    </div>
+  </div>
+</div>

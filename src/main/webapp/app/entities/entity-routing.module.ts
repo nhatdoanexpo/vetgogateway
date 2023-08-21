@@ -59,6 +59,11 @@ import { RouterModule } from '@angular/router';
         data: { pageTitle: 'VgOrders' },
         loadChildren: () => import('./vg-order/vg-order.module').then(m => m.VgOrderModule),
       },
+      {
+        path: 'order-item',
+        data: { pageTitle: 'OrderItems' },
+        loadChildren: () => import('./order-item/order-item.module').then(m => m.OrderItemModule),
+      },
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ]),
   ],

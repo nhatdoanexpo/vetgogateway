@@ -30,13 +30,14 @@
       "Distributor",
       "Partner",
       "Customer",
-      "VgOrder"
+      "VgOrder",
+      "OrderItem"
     ],
     "entitySuffix": "",
     "jhiPrefix": "jhi",
     "jhipsterVersion": "7.9.3",
     "languages": ["en", "fr"],
-    "lastLiquibaseTimestamp": 1692633008000,
+    "lastLiquibaseTimestamp": 1692633416000,
     "messageBroker": false,
     "microfrontend": false,
     "microfrontends": [],
