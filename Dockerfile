@@ -5,6 +5,7 @@ RUN mvn dependency:go-offline
 
 COPY ./pom.xml /tmp/
 COPY ./src /tmp/src/
+COPY ./sonar-project.properties /tmp/sonar-project.properties
 WORKDIR /tmp/
 RUN mvn clean package -Dmaven.test.skip
 
