@@ -8,7 +8,8 @@ node {
             // for display purposes
             // Get some code from a GitHub repository
             git url: 'https://github.com/nhatdoanexpo/vetgogateway.git',
-               branch: 'main'
+                credentialsId: '00c4370a-2487-4db4-a2f1-9854c306d485',
+                branch: 'main'
          }
           stage('Build docker') {
                  dockerImage = docker.build("vetgogateway:${env.BUILD_NUMBER}")
