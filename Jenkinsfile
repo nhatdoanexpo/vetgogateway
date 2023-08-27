@@ -7,9 +7,8 @@ node {
          stage('Clone Repo') {
             // for display purposes
             // Get some code from a GitHub repository
-            git url: 'https://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@github.com/nhatdoanexpo/vetgogateway.git',
-                credentialsId: 'deploy-user',
-                branch: 'main'
+            git url: 'https://github.com/nhatdoanexpo/vetgogateway.git',
+               branch: 'main'
          }
           stage('Build docker') {
                  dockerImage = docker.build("vetgogateway:${env.BUILD_NUMBER}")
