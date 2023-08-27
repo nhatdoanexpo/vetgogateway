@@ -8,7 +8,7 @@ node {
             // for display purposes
             // Get some code from a GitHub repository
             git url: 'https://github.com/nhatdoanexpo/vetgogateway.git',
-                credentialsId: '00c4370a-2487-4db4-a2f1-9854c306d485',
+                credentialsId: 'a1b743ba-fbc5-472f-914f-26dc9e374fcd',
                 branch: 'main'
          }
           stage('Build docker') {
